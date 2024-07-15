@@ -1,4 +1,4 @@
-package jpabook.jpashop;
+package jpabook.jpashop.domain;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.GeneratedValue;

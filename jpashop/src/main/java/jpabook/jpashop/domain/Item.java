@@ -1,10 +1,8 @@
-package jpabook.jpashop;
+package jpabook.jpashop.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,15 +12,11 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class Category {
+public class Item {
     @Id
     @GeneratedValue
     private Long id;
-
-    private List<Item> items = new ArrayList<>();
-    @OneToMany
-    private Category parent;
-    @ManyToOne
-    private List<Category> child;
-
+    private String name;
+    private int price;
+    private int stockQuantity;
 }
