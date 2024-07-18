@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jpabook.jpashop.service.ItemServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-16T08:28:50" hostname="sh-B360M-D3H" time="0.454">
+  <properties/>
+  <testcase name="상품저장()" classname="jpabook.jpashop.service.ItemServiceTest" time="0.454">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;jpabook.jpashop.domain.Item@59f56892&gt; but was: &lt;jpabook.jpashop.domain.Item@24b05292&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;jpabook.jpashop.domain.Item@59f56892&gt; but was: &lt;jpabook.jpashop.domain.Item@24b05292&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//jpabook.jpashop.service.ItemServiceTest.상품저장(ItemServiceTest.java:29)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.9/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.9/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[17:28:47.402 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jpabook.jpashop.service.ItemServiceTest]: ItemServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:28:47.480 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jpabook.jpashop.JpashopApplication for test class jpabook.jpashop.service.ItemServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-16T17:28:47.765+09:00  INFO 3189665 --- [    Test worker] j.jpashop.service.ItemServiceTest        : Starting ItemServiceTest using Java 17.0.9 with PID 3189665 (started by sh in /home/sh/study/jpa_application1/shopping_jpa/jpashop)
+2024-07-16T17:28:47.766+09:00  INFO 3189665 --- [    Test worker] j.jpashop.service.ItemServiceTest        : No active profile set, falling back to 1 default profile: "default"
+2024-07-16T17:28:48.178+09:00  INFO 3189665 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-16T17:28:48.192+09:00  INFO 3189665 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-07-16T17:28:48.445+09:00  INFO 3189665 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-16T17:28:48.560+09:00  INFO 3189665 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:14ffc75a-555e-4c40-af3e-3c2517f4f31b user=SA
+2024-07-16T17:28:48.561+09:00  INFO 3189665 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-16T17:28:48.592+09:00  INFO 3189665 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-16T17:28:48.641+09:00  INFO 3189665 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-16T17:28:48.671+09:00  INFO 3189665 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-16T17:28:48.851+09:00  INFO 3189665 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-16T17:28:49.491+09:00  INFO 3189665 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-16T17:28:49.499+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop table if exists delivery cascade 
+2024-07-16T17:28:49.502+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop table if exists item cascade 
+2024-07-16T17:28:49.502+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop table if exists member cascade 
+2024-07-16T17:28:49.502+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop table if exists order_item cascade 
+2024-07-16T17:28:49.502+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop table if exists orders cascade 
+2024-07-16T17:28:49.503+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists delivery_seq
+2024-07-16T17:28:49.503+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists item_seq
+2024-07-16T17:28:49.503+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists member_seq
+2024-07-16T17:28:49.504+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists order_item_seq
+2024-07-16T17:28:49.504+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : drop sequence if exists orders_seq
+2024-07-16T17:28:49.509+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create sequence delivery_seq start with 1 increment by 50
+2024-07-16T17:28:49.511+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create sequence item_seq start with 1 increment by 50
+2024-07-16T17:28:49.512+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create sequence member_seq start with 1 increment by 50
+2024-07-16T17:28:49.512+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create sequence order_item_seq start with 1 increment by 50
+2024-07-16T17:28:49.513+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create sequence orders_seq start with 1 increment by 50
+2024-07-16T17:28:49.515+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create table delivery (delivery_id bigint not null, city varchar(255), street varchar(255), zipcode varchar(255), status enum ('COMP','READY'), primary key (delivery_id))
+2024-07-16T17:28:49.519+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create table item (price integer not null, stock_quantity integer not null, item_id bigint not null, name varchar(255), primary key (item_id))
+2024-07-16T17:28:49.520+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create table member (member_id bigint not null, city varchar(255), name varchar(255), street varchar(255), zipcode varchar(255), primary key (member_id))
+2024-07-16T17:28:49.521+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create table order_item (count integer not null, order_price integer not null, item_id bigint, order_id bigint, order_item_id bigint not null, primary key (order_item_id))
+2024-07-16T17:28:49.522+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : create table orders (delivery_id bigint unique, member_id bigint, order_date timestamp(6), order_id bigint not null, status enum ('CANCEL','ORDER'), primary key (order_id))
+2024-07-16T17:28:49.525+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : alter table if exists order_item add constraint FKija6hjjiit8dprnmvtvgdp6ru foreign key (item_id) references item
+2024-07-16T17:28:49.532+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : alter table if exists order_item add constraint FKt4dc2r9nbvbujrljv3e23iibt foreign key (order_id) references orders
+2024-07-16T17:28:49.533+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : alter table if exists orders add constraint FKtkrur7wg4d8ax0pwgo0vmy20c foreign key (delivery_id) references delivery
+2024-07-16T17:28:49.534+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : alter table if exists orders add constraint FKpktxwhj3x9m4gth5ff6bkqgeb foreign key (member_id) references member
+2024-07-16T17:28:49.538+09:00  INFO 3189665 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-16T17:28:49.699+09:00  WARN 3189665 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-16T17:28:49.720+09:00  INFO 3189665 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-16T17:28:50.009+09:00  INFO 3189665 --- [    Test worker] j.jpashop.service.ItemServiceTest        : Started ItemServiceTest in 2.429 seconds (process running for 3.123)
+2024-07-16T17:28:50.405+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : select next value for item_seq
+2024-07-16T17:28:50.435+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : insert into item (name,price,stock_quantity,item_id) values (?,?,?,?)
+2024-07-16T17:28:50.463+09:00 DEBUG 3189665 --- [    Test worker] org.hibernate.SQL                        : select i1_0.item_id,i1_0.name,i1_0.price,i1_0.stock_quantity from item i1_0 where i1_0.item_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
