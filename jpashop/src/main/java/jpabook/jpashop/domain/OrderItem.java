@@ -1,16 +1,6 @@
 package jpabook.jpashop.domain;
 
-<<<<<<< HEAD
-public class OrderItem {
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jpabook.jpashop.domain.Item;
-import jpabook.jpashop.domain.Order;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -54,5 +44,4 @@ public class OrderItem {
     }
 
 
->>>>>>> 57482069c8310f45ee20a9e9d48e413b7df9045d
 }

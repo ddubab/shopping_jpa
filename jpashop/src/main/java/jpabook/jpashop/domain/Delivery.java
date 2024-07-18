@@ -1,7 +1,5 @@
 package jpabook.jpashop.domain;
 
-<<<<<<< HEAD
-=======
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -28,5 +26,4 @@ public class Delivery {
     private Address address;
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status;
->>>>>>> 57482069c8310f45ee20a9e9d48e413b7df9045d
 }

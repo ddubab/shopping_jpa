@@ -1,7 +1,5 @@
 package jpabook.jpashop.domain;
 
-<<<<<<< HEAD
-=======
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,30 +18,11 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
->>>>>>> 57482069c8310f45ee20a9e9d48e413b7df9045d
 import java.util.List;
 
 @Entity
 @Getter
 @Setter
-<<<<<<< HEAD
-public class Order {
-    @Id
-    @GeneratedValue
-    private Long id;
-
-    private String name;
-
-    private List<OrderItem> orderItems = new ArrayList<>();
-
-    private Delivery delivery;
-
-    private Date orderDate;
-    @ManyToOne
-    private Member member;
-
-    private OrderStatus orderStatus;
-=======
 @Table(name = "orders")
 public class Order {
     @Id
@@ -122,5 +101,4 @@ public class Order {
         }
         return totalPrice;
     }
->>>>>>> 57482069c8310f45ee20a9e9d48e413b7df9045d
 }
