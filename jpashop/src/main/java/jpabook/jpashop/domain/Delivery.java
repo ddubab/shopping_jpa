@@ -1,7 +1,6 @@
 package jpabook.jpashop.domain;
 
 <<<<<<< HEAD
-public class Delivery {
 =======
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
